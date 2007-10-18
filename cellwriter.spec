@@ -12,7 +12,7 @@ URL:            http://risujin.org/cellwriter/
 Group:          Accessibility
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot 
 License:        GPL
-BuildRequires:  libxtst6-devel gtk2-devel libgnome2-devel
+BuildRequires:  libxtst-devel gtk2-devel libgnome2-devel
 
 %description
 CellWriter is a grid-entry natural handwriting input panel. As you write
