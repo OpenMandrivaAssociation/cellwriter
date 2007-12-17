@@ -10,7 +10,6 @@ Source0:        http://pub.risujin.org/%{name}-%{version}.tar.gz
 URL:            http://risujin.org/cellwriter/ 
 
 Group:          Accessibility
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot 
 License:        GPL
 BuildRequires:  libxtst-devel gtk2-devel libgnome2-devel
 
