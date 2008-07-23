@@ -1,6 +1,6 @@
 %define name    cellwriter
 %define version 1.2.4
-%define release %mkrel 1
+%define release %mkrel 3
 
 Name:           %{name} 
 Summary:        Character-based hardwriting input panel
