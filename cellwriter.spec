@@ -1,14 +1,14 @@
 %define name    cellwriter
-%define version 1.2.4
-%define release %mkrel 3
+%define version 1.3.4
+%define release %mkrel 1
 
 Name:           %{name} 
 Summary:        Character-based hardwriting input panel
 Version:        %{version} 
 Release:        %{release} 
-Source0:        http://pub.risujin.org/%{name}-%{version}.tar.gz
+Source0:        http://pub.risujin.org/cellwriter/%{name}-%{version}.tar.gz
+Patch0:		cellwriter-1.3.4-fix-str-fmt.patch
 URL:            http://risujin.org/cellwriter/ 
-
 Group:          Accessibility
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot 
 License:        GPL
@@ -22,21 +22,18 @@ sent to the currently focused application as if typed on the keyboard.
 
 %prep 
 %setup -q
+%patch0 -p0
 
 %build 
 %configure2_5x
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
-%makeinstall
-rm -f %buildroot/%{_iconsdir}/hicolor/icon-theme.cache
-
-%post
-%update_icon_cache
+rm -rf %buildroot
+%makeinstall_std
 
 %clean 
-rm -rf $RPM_BUILD_ROOT 
+rm -rf %buildroot
 
 %files 
 %defattr(0755,root,root) 
