@@ -1,6 +1,6 @@
 %define name    cellwriter
 %define version 1.3.4
-%define release %mkrel 2
+%define release %mkrel 3
 
 Name:           %{name} 
 Summary:        Character-based hardwriting input panel
@@ -11,7 +11,7 @@ Patch0:		cellwriter-1.3.4-fix-str-fmt.patch
 URL:            http://risujin.org/cellwriter/ 
 Group:          Accessibility
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot 
-License:        GPL
+License:        GPLv2
 BuildRequires:  libxtst-devel gtk2-devel libgnome2-devel
 
 %description
