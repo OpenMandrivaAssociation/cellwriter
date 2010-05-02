@@ -1,6 +1,6 @@
 %define name    cellwriter
 %define version 1.3.4
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name:           %{name} 
 Summary:        Character-based hardwriting input panel
@@ -36,7 +36,7 @@ rm -rf %buildroot
 rm -rf %buildroot
 
 %files 
-%defattr(0755,root,root) 
+%defattr(-,root,root) 
 %doc README NEWS COPYING AUTHORS 
 %{_bindir}/*
 %{_mandir}/man1/*
