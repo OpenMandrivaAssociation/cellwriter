@@ -6,8 +6,8 @@
 
 Name:           %{name} 
 Summary:        Character-based hardwriting input panel
-Version:        %{version} 
-Release:        %{release} 
+Version:        1.3.5
+Release:        1
 Source0:        http://pub.risujin.org/cellwriter/%{name}-%{version}.tar.gz
 Patch0:		cellwriter-1.3.4-fix-str-fmt.patch
 URL:            http://risujin.org/cellwriter/ 
@@ -79,5 +79,6 @@ make %{?_smp_mflags} LIBS="$LIBS -lX11 -lm -lXtst"
 + Revision: 99984
 - fix buildrequires
 - import cellwriter
+
 
 
