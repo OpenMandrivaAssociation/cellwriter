@@ -3,7 +3,7 @@
 Name:           cellwriter
 Summary:        Character-based hardwriting input panel
 Version:        1.3.5
-Release:        1
+Release:        2
 Source0:        http://pub.risujin.org/cellwriter/%{name}-%{version}.tar.gz
 URL:            http://risujin.org/cellwriter/ 
 Group:          Accessibility
