@@ -2,9 +2,9 @@
 
 Name:           cellwriter
 Summary:        Character-based hardwriting input panel
-Version:        1.3.5
-Release:        2
-Source0:        http://pub.risujin.org/cellwriter/%{name}-%{version}.tar.gz
+Version:        1.3.6
+Release:        1
+Source0:        https://github.com/risujin/cellwriter/archive/%{version}/%{name}-%{version}.tar.gz
 URL:            http://risujin.org/cellwriter/ 
 Group:          Accessibility
 License:        GPLv2
@@ -23,11 +23,11 @@ sent to the currently focused application as if typed on the keyboard.
 
 
 %build 
-%configure2_5x
-%make LIBS="$LIBS -lX11 -lm -lXtst"
+%configure
+%make_build LIBS="$LIBS -lX11 -lm -lXtst"
 
 %install
-%makeinstall_std
+%make_install
 
 
 %files  
