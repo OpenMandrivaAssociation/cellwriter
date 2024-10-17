@@ -5,7 +5,7 @@ Summary:        Character-based hardwriting input panel
 Version:        1.3.6
 Release:        1
 Source0:        https://github.com/risujin/cellwriter/archive/%{version}/%{name}-%{version}.tar.gz
-URL:            http://risujin.org/cellwriter/ 
+URL:            https://risujin.org/cellwriter/ 
 Group:          Accessibility
 License:        GPLv2
 BuildRequires:   pkgconfig(xtst)
