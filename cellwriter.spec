@@ -8,6 +8,11 @@ Source0:        https://github.com/risujin/cellwriter/archive/%{version}/%{name}
 URL:            https://risujin.org/cellwriter/ 
 Group:          Accessibility
 License:        GPLv2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:   pkgconfig(xtst)
 BuildRequires:   pkgconfig(gdk-2.0)
 BuildRequires:   pkgconfig(libgnome-2.0)
